@@ -1,0 +1,25 @@
+body {
+  background-color: #2E64FE;
+}
+body #contenedor_usuario {
+  background-color: white;
+  width: 40vw;
+  height: 20vh;
+  padding: 2%;
+  margin-left: 30%;
+  margin-top: 15%;
+  border-radius: 10px;
+}
+body #contenedor_usuario form {
+  background-color: transparent;
+  margin: auto;
+  width: 22vw;
+}
+body #contenedor_usuario form h3 {
+  color: black;
+}
+body #contenedor_usuario form input {
+  width: 335px;
+}
+
+/*# sourceMappingURL=nuevo_usuario.css.map */

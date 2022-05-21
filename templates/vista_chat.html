@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat+ Sala actual: {{sala_de_chat}}</title>
+    <link rel="stylesheet" href="/static/css/vista_chat.css">
+    <!--Nos vinculamos con bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1>Usuario: {{usuario}}</h1>
+    <h1>Sala actual: {{sala_de_chat}}</h1>
+    <div id="contendor_chats" >
+
+    </div>
+    <form action="" id="mi_chat">
+        <input type="text" name="txt_chat" id="txt_chat">
+        <button class="btn btn-primary">Enviar mensaje</button>
+    </form>
+
+    <!-- conexion con socketio-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <script src="/static/scrips/vista_chat.js"></script>
+</body>
+</html>
